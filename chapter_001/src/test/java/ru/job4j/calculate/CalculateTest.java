@@ -7,9 +7,9 @@ import static org.junit.Assert.assertThat;
 /**
 * Test.
 *
-* @author Evgenii Ivanov (evg212009@yandex.ru)
-* @version 1
-* @since 06.03.2019
+* @author Evgenii Ivanov (evg212009@yandex.ru).
+* @version 1.
+* @since 06.03.2019.
 */
 
 public class CalculateTest {
