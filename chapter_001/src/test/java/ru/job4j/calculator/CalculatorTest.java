@@ -2,7 +2,6 @@ package ru.job4j.calculator;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
-import static org.jinit.Assert.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
@@ -22,7 +21,7 @@ public class CalculatorTest {
 		Calculator calc = new Calculator();
 		double result = calc.add(1D, 1D);
 		double expected = 2D;
-		assertThat(result, is(expected))
+		assertThat(result, is(expected));
 	}
 	/**
 	*Test subtract.
@@ -31,8 +30,8 @@ public class CalculatorTest {
 	public void whenSubtractOneMinusOneThenTwo() {
 		Calculator calc = new Calculator();
 		double result = calc.subtract(1D, 1D);
-		double expected = 2D;
-		assertThat(result, is(expected))
+		double expected = 0;
+		assertThat(result, is(expected));
 	}
 	/**
 	*Test div.
@@ -41,8 +40,8 @@ public class CalculatorTest {
 	public void whenDivOnedivideOneThenTwo() {
 		Calculator calc = new Calculator();
 		double result = calc.div(1D, 1D);
-		double expected = 2D;
-		assertThat(result, is(expected))
+		double expected = 1D;
+		assertThat(result, is(expected));
 	}
 	/**
 	*Test multiply.
@@ -51,7 +50,7 @@ public class CalculatorTest {
 	public void whenMultipleOnemultiplyOneThenTwo() {
 		Calculator calc = new Calculator();
 		double result = calc.multiple(1D, 1D);
-		double expected = 2D;
-		assertThat(result, is(expected))
+		double expected = 1D;
+		assertThat(result, is(expected));
 	}
 }
