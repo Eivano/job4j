@@ -12,7 +12,7 @@ public class Calculator {
 	
 	/**
 	*Method add.
-	*@param name first,second.
+	*@param  first,second.
 	*@return first+second.
 	*/
 	
@@ -22,7 +22,7 @@ public class Calculator {
 	
 	/**
 	*Method subtract.
-	*@param name first,second.
+	*@param  first,second.
 	*@return first-second.
 	*/
 
@@ -32,7 +32,7 @@ public class Calculator {
 	
 	/**
 	*Method divide.
-	*@param name first,second.
+	*@param  first,second.
 	*@return first/second.
 	*/
 
