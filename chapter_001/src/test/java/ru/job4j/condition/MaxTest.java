@@ -27,8 +27,8 @@ public class MaxTest {
 	*/
     @Test
     public void whenMax2To1Then2() {
-        Max max2 = new Max();
-        int result = max2.max2(2, 1);
+        Max max = new Max();
+        int result = max.max(2, 1);
         assertThat(result, is(2));
     }
 	/**
@@ -36,8 +36,8 @@ public class MaxTest {
 	*/
     @Test
     public void whenEqually1To1Then1() {
-        Max eq = new Max();
-        int result = eq.eq(1, 1);
-        assertThat(result, is(1));
+        Max max = new Max();
+        int result = max.max(2, 2);
+        assertThat(result, is(2));
     }
 }
