@@ -16,8 +16,8 @@ public class TriangleTest {
         // Вычисляем площадь.
         double result = triangle.area(0, 0, 0, 2, 2, 0);
         // Задаем ожидаемый результат.
-        double expected = 2D;
+        double expected = -1;
         //Проверяем результат и ожидаемое значение.
-        assertThat(result, closeTo(expected, 0.1));
+        assertThat(result, closeTo(expected, -1));
     }
 }

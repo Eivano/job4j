@@ -12,9 +12,11 @@ public class Triangle {
 	* @param a расстояние между точками a b.
 	* @param b расстояние между точками a c.
 	* @param c расстояние между точками b c.
-	*/
+    * @return Периметр.
+    */
+
 	public double period(double a, double b, double c) {
-		double p = (a + b + c) / 2;
+	    double p = ( a + b + c ) / 2;
 		return p;
 	}
 
@@ -30,14 +32,13 @@ public class Triangle {
 	* @return Вернуть площадь, если треугольник существует или -1.
 	*/
 	public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
-		double rsl = triangle.area ;
-		double a = new.Point().distance(x1, y1, x2, y2);
+		double rsl = Math.sqrt();
+		double a = new Point().distance(x1, y1, x2, y2);
 		double b = new Point().distance(x2, y2, x3, y3);
-		double c = new.Point().distance(x1, y1, x3, y3);
+		double c = new Point().distance(x1, y1, x3, y3);
 		double p = period(a, b, c);
 		if (this.exist(a, b, c)) {
-			Math.sqrt(p * (p - a * b) * (p - a * c) * (p - b * c));
-			rsl = triangle.area;
+			rsl = Math.sqrt (p * (p - a) * (p - b) * (p - c));
 		}
 		return rsl;
 	}
@@ -47,13 +48,19 @@ public class Triangle {
 	*
 	* Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
 	*
-	* @param a Длина от точки a b.
-	* @param b Длина от точки a c.
-	* @param c Длина от точки b c.
+	* @param ab Длина от точки a b.
+	* @param ac Длина от точки a c.
+	* @param bc Длина от точки b c.
 	* @return
 	*/
-	private boolean exist(double a, double c, double b) {
-	    boolean result = a + b > a + c ? false: true;
-		return false;
+	private boolean exist(double ab, double ac, double bc) {
+	    if ( ab + ac > bc ) {
+	        rsl = false;
+        } else if ( ab + ac < bc ) {
+            rsl = false;
+        } else if ( ab + ac == bc ) {
+	        rsl = true;
+        }
+	    return rsl;
 	}
 }
