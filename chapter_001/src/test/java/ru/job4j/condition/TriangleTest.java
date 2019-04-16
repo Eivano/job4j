@@ -18,6 +18,6 @@ public class TriangleTest {
         // Задаем ожидаемый результат.
         double expected = -1;
         //Проверяем результат и ожидаемое значение.
-        assertThat(result, closeTo(expected, -1));
+        assertThat(result, closeTo(expected, 0.1));
     }
 }

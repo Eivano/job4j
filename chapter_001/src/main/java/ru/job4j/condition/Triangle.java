@@ -32,7 +32,7 @@ public class Triangle {
 	* @return Вернуть площадь, если треугольник существует или -1.
 	*/
 	public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
-		double rsl = Math.sqrt();
+		double rsl = -1;
 		double a = new Point().distance(x1, y1, x2, y2);
 		double b = new Point().distance(x2, y2, x3, y3);
 		double c = new Point().distance(x1, y1, x3, y3);
@@ -55,12 +55,12 @@ public class Triangle {
 	*/
 	private boolean exist(double ab, double ac, double bc) {
 	    if ( ab + ac > bc ) {
-	        rsl = false;
-        } else if ( ab + ac < bc ) {
-            rsl = false;
-        } else if ( ab + ac == bc ) {
-	        rsl = true;
-        }
-	    return rsl;
+	        return true;
+        } else if ( ab + bc > ac ) {
+            return true;
+        } else if ( bc + ac > ab ) {
+			return true;
+		}
+	    return true;
 	}
 }
