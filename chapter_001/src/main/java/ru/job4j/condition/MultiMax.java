@@ -13,7 +13,12 @@ public class MultiMax {
 	* @return Ответ.
 	*/
 	public int max(int first, int second, int third) {
-		int result = first > second ? ( first > third ? first : third ) : ( second > third ? second : third );
+		int result = first > second ? first : second;
+		   if ( first > second ) {
+		   	result = first > third ? first : third;
+		   } else if ( first < second ) {
+		   	result = second > third ? second : third;
+		   }
 		
 		return result;
 	}
