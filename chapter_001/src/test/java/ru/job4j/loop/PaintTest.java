@@ -56,7 +56,7 @@ public class PaintTest {
 	* Тест всей пирамиды.
 	*/
     @Test
-    public void whenPyramid4RightAndLeft() {
+    public void whenPyramid() {
         Paint paint = new Paint();
         String rst = paint.pyramid(4);
         System.out.println(rst);
