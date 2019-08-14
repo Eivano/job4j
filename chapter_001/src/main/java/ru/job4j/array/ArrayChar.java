@@ -16,12 +16,9 @@ package ru.job4j.array;
         char[] pref = prefix.toCharArray();
         char[] wrd = word.toCharArray();
 
-           for(int index = 0; index <= pref.length - 1; index++) {
-               if( pref[index] != wrd[index] ) {
+           for(int index = 0; index < pref.length; index++) {
+               if(pref[index] != wrd[index]) {
                    result = false;
-               } else {
-                   result= true;
-                   break;
                }
            }
 
