@@ -19,6 +19,7 @@ package ru.job4j.array;
            for(int index = 0; index < pref.length; index++) {
                if(pref[index] != wrd[index]) {
                    result = false;
+				   break;
                }
            }
 
