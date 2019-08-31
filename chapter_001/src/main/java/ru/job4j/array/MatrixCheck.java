@@ -6,9 +6,11 @@ public class MatrixCheck {
          for (int p = 1; p < data.length; p++) {
 	        if (data[0][0] != data[p][p]) {
 				result = false;
+				break;
 			}
 			if (data[data.length - 1][0] != data[data.length - 1 - p][p]) {
 				result = false;
+				break;
 			}
        }
         return result;
